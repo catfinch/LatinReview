@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Latin App:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Latin_App_jar</output-path>
+    <root id="archive" name="Latin App.jar">
+      <element id="module-output" name="Latin App" />
+      <element id="archive" name="LatinReview.jar" />
+    </root>
+  </artifact>
+</component>
