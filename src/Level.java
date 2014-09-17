@@ -1,4 +1,4 @@
-package com.mypackage;
+ 
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -6,13 +6,16 @@ import java.awt.event.ActionListener;
 
 public class Level extends JPanel
                      implements ActionListener{
-    protected JButton declen, MOTV, w2, back1, first, second, third, fourth, fifth, done, back2;
+    protected JButton declen, lat2, w2, back1, first, second, third, fourth, fifth, done;
+    protected JLabel l1;
 
     protected JTextField ar1c1, ar1c2, ar2c1, ar2c2, ar3c1,ar3c2,ar4c1,ar4c2,ar5c1,ar5c2, score;
-    protected JLabel l1, r1, r2, r3, r4, r5, mess;
+    protected JLabel r1, r2, r3, r4, r5;
+    protected JSeparator row12, row23, row34, row45;
 
-    public static String nom1 = "", nom2= "", gen1= "",gen2= "", dat1= "",dat2= "",acc1= "",acc2= "",abl1= "",abl2= "", Results, Declension = "";
+    public static String nom1 = "", nom2= "", gen1= "",gen2= "", dat1= "",dat2= "",acc1= "",acc2= "",abl1= "",abl2= "", Results;
     public static boolean ShowWeek = false, Results_Shown = false;
+    public static String Declension = "";
     public static int Right = 0;
     public Level(){
         // = new JButton("");
@@ -22,35 +25,32 @@ public class Level extends JPanel
         //add();
 
         //com.mypackage.Level 1 of buttons
-        {
-            declen = new JButton("Noun Declensions");
-            declen.setActionCommand("Declensions");
-            declen.setVisible(true);
+        declen = new JButton("Noun Declensions");
+        declen.setActionCommand("Declensions");
+        declen.setVisible(true);
 
-            MOTV = new JButton("Message of the Version");
-            MOTV.setVerticalTextPosition(AbstractButton.CENTER);
-            MOTV.setHorizontalTextPosition(AbstractButton.LEADING);
-            MOTV.setActionCommand("motv");
-            MOTV.setHorizontalAlignment(SwingConstants.CENTER);
-            MOTV.setVerticalAlignment(SwingConstants.CENTER);
-            MOTV.setVisible(true);
+        lat2 = new JButton("Latin 2*");
+        lat2.setVerticalTextPosition(AbstractButton.CENTER);
+        lat2.setHorizontalTextPosition(AbstractButton.LEADING);
+        lat2.setActionCommand("expandTest");
+        lat2.setHorizontalAlignment(SwingConstants.CENTER);
+        lat2.setVerticalAlignment(SwingConstants.CENTER);
+        lat2.setVisible(true);
 
-            declen.addActionListener(this);
-            MOTV.addActionListener(this);
+        declen.addActionListener(this);
+        lat2.addActionListener(this);
 
-            declen.setToolTipText("fill out the declension chart");
+        declen.setToolTipText("fill out the declension chart");
 
-            add(declen);
-            add(MOTV);
-        }
+        add(declen);
+        add(lat2);
+        //label for level one
+        l1 = new JLabel("Test");
+        l1.setText("Pick your class");
+        l1.setVisible(true);
 
-        {
-            //label for level one
-            l1 = new JLabel("Test");
-            l1.setText("Pick your class");
-            l1.setVisible(true);
-            add(l1);
-        }
+
+        add(l1);
 
         w2 = new JButton("Week 1");
         w2.setVisible(false);
@@ -65,7 +65,7 @@ public class Level extends JPanel
         back1.addActionListener(this);
 
         add(w2);
-
+        add(back1);
 
         first= new JButton("1st");
         second = new JButton("2nd");
@@ -104,6 +104,10 @@ public class Level extends JPanel
         done.setActionCommand("done");
 
         done.addActionListener(this);
+
+
+
+
 
         ar1c1 = new JTextField();
         ar1c2 = new JTextField();
@@ -192,36 +196,18 @@ public class Level extends JPanel
         score.setEditable(false);
 
         add(score);
-
-        mess = new JLabel(messageOfTheVersion.MotV());
-        mess.setVisible(false);
-        add(mess);
-
-        back2 = new JButton("Back");
-        back2.setVisible(false);
-        back2.setActionCommand("back2");
-        back2.addActionListener(this);
-
-        add(back1);
-        add(back2);
-
-
-
-
     }
 
 
     public void actionPerformed(ActionEvent e){
         Object src = e.getActionCommand();
-        if(src == "motv") {
+        if(src == "expandTest") {
             System.out.println(src);
-//            w2.setVisible(true);
+            w2.setVisible(true);
             back1.setVisible(true);
-            mess.setVisible(true);
 
             declen.setVisible(false);
             l1.setVisible(false);
-            MOTV.setVisible(false);
             System.out.println("com.mypackage.Level to Weeks");
             src = e.getActionCommand();
         }
@@ -229,42 +215,16 @@ public class Level extends JPanel
             System.out.println(src);
             w2.setVisible(false);
             back1.setVisible(false);
-            mess.setVisible(false);
-            first.setVisible(false);
-            second.setVisible(false);
-            third.setVisible(false);
-            fourth.setVisible(false);
-            fifth.setVisible(false);
-            ar1c1.setVisible(false);
-            ar1c2.setVisible(false);
-            ar2c1.setVisible(false);
-            ar2c2.setVisible(false);
-            ar3c1.setVisible(false);
-            ar3c2.setVisible(false);
-            ar4c1.setVisible(false);
-            ar4c2.setVisible(false);
-            ar5c1.setVisible(false);
-            ar5c2.setVisible(false);
-            r1.setVisible(false);
-            r2.setVisible(false);
-            r3.setVisible(false);
-            r4.setVisible(false);
-            r5.setVisible(false);
-            done.setVisible(false);
-
 
             declen.setVisible(true);
             l1.setVisible(true);
-            MOTV.setVisible(true);
-
-
             System.out.println("Back to com.mypackage.Level");
             src = e.getActionCommand();
         }
         if(src == "Declensions"){
             System.out.println(src);
             declen.setVisible(false);
-            MOTV.setVisible(false);
+            lat2.setVisible(false);
             l1.setVisible(false);
 
             first.setVisible(true);
@@ -272,7 +232,6 @@ public class Level extends JPanel
             third.setVisible(true);
             fourth.setVisible(true);
             fifth.setVisible(true);
-            back1.setVisible(true);
             src = e.getActionCommand();
         }
         if(src == "First"){
@@ -364,7 +323,7 @@ public class Level extends JPanel
             Declension = "ThirdDec";
             src = e.getActionCommand();
         }
-        if(src == "Third -i stem"){
+        if(src == "Fourth"){
             System.out.println(src);
             first.setVisible(false);
             second.setVisible(false);
@@ -392,7 +351,7 @@ public class Level extends JPanel
             Declension = "FourthDec";
             src = e.getActionCommand();
         }
-        if(src == "Fourth"){
+        if(src == "Fifth"){
             System.out.println(src);
             first.setVisible(false);
             second.setVisible(false);
