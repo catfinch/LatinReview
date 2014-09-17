@@ -251,7 +251,7 @@ public class Level extends JPanel
             r4.setVisible(false);
             r5.setVisible(false);
             done.setVisible(false);
-
+            score.setVisible(false);
 
             declen.setVisible(true);
             l1.setVisible(true);
@@ -302,7 +302,7 @@ public class Level extends JPanel
             r3.setVisible(true);
             r4.setVisible(true);
             r5.setVisible(true);
-
+            back1.setVisible(true);
             done.setVisible(true);
             Declension = "FirstDec";
             src = e.getActionCommand();
@@ -331,7 +331,7 @@ public class Level extends JPanel
             r3.setVisible(true);
             r4.setVisible(true);
             r5.setVisible(true);
-
+            back1.setVisible(true);
             done.setVisible(true);
             Declension = "SecondDec";
             src = e.getActionCommand();
@@ -359,7 +359,7 @@ public class Level extends JPanel
             r3.setVisible(true);
             r4.setVisible(true);
             r5.setVisible(true);
-
+            back1.setVisible(true);
             done.setVisible(true);
             Declension = "ThirdDec";
             src = e.getActionCommand();
@@ -415,7 +415,7 @@ public class Level extends JPanel
             r3.setVisible(true);
             r4.setVisible(true);
             r5.setVisible(true);
-
+            back1.setVisible(true);
             done.setVisible(true);
             Declension = "FifthDec";
             src = e.getActionCommand();
@@ -518,6 +518,7 @@ public class Level extends JPanel
                 Results = Integer.toString(Right) + " of 10";
                 score.setText(Results);
                 score.setVisible(true);
+                back1.setVisible(true);
 
             }
             if (Declension.equals("SecondDec")){
@@ -632,6 +633,7 @@ public class Level extends JPanel
                 Results = Integer.toString(Right) + " of 10";
                 score.setText(Results);
                 score.setVisible(true);
+                back1.setVisible(true);
 
             }
             if (Declension.equals("ThirdDec")){
@@ -756,7 +758,7 @@ public class Level extends JPanel
                 Results = Integer.toString(Right) + " of 10";
                 score.setText(Results);
                 score.setVisible(true);
-
+                back1.setVisible(true);
 
             }
             if (Declension.equals("FourthDec")){
@@ -873,7 +875,7 @@ public class Level extends JPanel
                 r4.setVisible(false);
                 r5.setVisible(false);
                 done.setVisible(false);
-
+                back1.setVisible(true);
                 System.out.println(Right);
                 Results = Integer.toString(Right) + " of 10";
                 score.setText(Results);
@@ -1024,7 +1026,7 @@ public class Level extends JPanel
                 r4.setVisible(false);
                 r5.setVisible(false);
                 done.setVisible(false);
-
+                back1.setVisible(true);
                 System.out.println(Right);
                 Results = Integer.toString(Right) + " of 10";
                 score.setText(Results);
