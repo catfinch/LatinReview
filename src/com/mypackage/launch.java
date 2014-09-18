@@ -3,6 +3,7 @@ package com.mypackage;
 import com.mypackage.Level;
 
 import javax.swing.JFrame;
+import java.awt.*;
 
 public class launch {
 
@@ -20,12 +21,12 @@ public class launch {
         frame.setContentPane(newContentPane);
 
 
-
-
         //Display the window.
         frame.setSize(600,500);
         frame.setLocation(500, 240);
         frame.setVisible(true);
+
+
 
         if(Level.ShowWeek)
         {
@@ -41,6 +42,7 @@ public class launch {
 
             //weeksContentPane2.setVisible(false);
         }
+
     }
 
     public static void main(String[] args) {
@@ -52,4 +54,5 @@ public class launch {
             }
         });
     }
+
 }

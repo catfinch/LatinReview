@@ -1,0 +1,36 @@
+Double click, right click, hit open, or enter to start.
+Click to the section you want.
+
+###################################################################################################################
+
+Declensions will score you +1 point for every correct box.
+
+The Chapter sections will score you for every translation correct. The translation is exactly as it is in the book.
+no caps except on names.
+
+The Chapter section will NOT score on the Responde Latine section because of all the possible combinations would
+take too long to enter into the program.
+
+##################################################################################################################
+
+Talk to me if you want your message in the Message of the Version section.
+Rules for MotV requests
+1. keep it clean
+2. if you don't have something nice to say, don't say it.
+3. don't complain/pester me if it is not yet in/removed. that is the quickest way to not have requests accepted.
+
+#################################################################################################################
+
+Current content
+Decensions -> 1st, 2nd, 3rd, 3rd -i stem, and 4th are completed
+Latin 1->nothing
+Latin 2->Chapter 1.
+Latin 3->nothing
+Latin 4->nothing
+
+#################################################################################################################
+
+If you want to see what is doing all the work, go to https://github.com/catfinch/LatinReview
+any problems, send an email to steve.sykora@gmail.com
+
+Not tested on mac.
