@@ -5,7 +5,7 @@ package com.mypackage;
  */
 public class messageOfTheVersion {
     public static String MotV(){
-        String message = "test message, pending update";
+        String message = "Hic cursus TRANSIBITIS!";
         return message;
     }
 }

@@ -2,8 +2,16 @@
   <artifact type="jar" name="Latin App:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/Latin_App_jar</output-path>
     <root id="archive" name="Latin App.jar">
-      <element id="module-output" name="Latin App" />
-      <element id="archive" name="LatinReview.jar" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="directory" name="com">
+        <element id="directory" name="mypackage">
+          <element id="file-copy" path="$PROJECT_DIR$/src/com/mypackage/launch.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/com/mypackage/messageOfTheVersion.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/src/com/mypackage/Level.java" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

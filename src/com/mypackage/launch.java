@@ -23,11 +23,11 @@ public class launch {
 
 
         //Display the window.
-        frame.setSize(500,500);
+        frame.setSize(600,500);
         frame.setLocation(500, 240);
         frame.setVisible(true);
 
-        if(Level.ShowWeek == true)
+        if(Level.ShowWeek)
         {
             newContentPane.setVisible(false);
             //weeksContentPane2.setVisible(true);

@@ -1,18 +1,22 @@
 package com.mypackage;
 
 import javax.swing.*;
+import javax.swing.plaf.synth.SynthButtonUI;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Level extends JPanel
                      implements ActionListener{
-    protected JButton declen, MOTV, w2, back1, first, second, third, fourth, fifth, done, back2;
+    protected JButton declen, MOTV, w2, back1, first, second, third, fourth, fifth, done, back2,
+            lat2, lat2week1, d2w1, d2w1b;
 
-    protected JTextField ar1c1, ar1c2, ar2c1, ar2c2, ar3c1,ar3c2,ar4c1,ar4c2,ar5c1,ar5c2, score;
-    protected JLabel l1, r1, r2, r3, r4, r5, mess;
+    protected JTextField ar1c1, ar1c2, ar2c1, ar2c2, ar3c1,ar3c2,ar4c1,ar4c2,ar5c1,ar5c2, score
+            ;
+    protected JLabel l1, r1, r2, r3, r4, r5, mess, l2w1t1, hint;
+    protected JTable lat2wk1, lat2wk1b;
 
     public static String nom1 = "", nom2= "", gen1= "",gen2= "", dat1= "",dat2= "",acc1= "",acc2= "",abl1= "",abl2= "", Results, Declension = "";
-    public static boolean ShowWeek = false, Results_Shown = false;
+    public static boolean ShowWeek = false;
     public static int Right = 0;
     public Level(){
         // = new JButton("");
@@ -205,9 +209,76 @@ public class Level extends JPanel
         add(back1);
         add(back2);
 
+        lat2 = new JButton("Latin 2");
+        lat2.setVisible(true);
+        lat2.setActionCommand("lat2");
+        lat2.addActionListener(this);
+        add(lat2);
+
+        lat2week1 = new JButton("Week 1");
+        lat2week1.setToolTipText("pg3, chapter XXVIII");
+        lat2week1.setVisible(false);
+        lat2week1.setActionCommand("lat2wk1");
+        lat2week1.addActionListener(this);
+        add(lat2week1);
+
+
+        lat2wk1 = new JTable(8,2);
+        lat2wk1.getColumnModel().getColumn(0).setPreferredWidth(200);
+        lat2wk1.getColumnModel().getColumn(1).setPreferredWidth(150);
+        lat2wk1.setValueAt("crines, crinium", 0, 0);
+        lat2wk1.isCellEditable(0, 1);
+        lat2wk1.setValueAt("neglegenter", 1, 0);
+        lat2wk1.setValueAt("vexatu, -a, -um",2,0);
+        lat2wk1.setValueAt("porcus, -i", 3, 0);
+        lat2wk1.setValueAt("cuius",4,0);
+        lat2wk1.setValueAt("glis, gliris, glirium", 5, 0);
+        lat2wk1.setValueAt("sella, -ae",6,0);
+        lat2wk1.setValueAt("vendo, vendere, vendidi, venditus", 7, 0);
+        for (int i = 0; i < 8; i++){
+            lat2wk1.setValueAt(" ",i,1);
+        }
+        lat2wk1.setVisible(false);
+
+        lat2wk1b = new JTable(8,2);
+        lat2wk1b.getColumnModel().getColumn(0).setPreferredWidth(350);
+        lat2wk1b.getColumnModel().getColumn(1).setPreferredWidth(150);
+        lat2wk1b.setValueAt("Quid faciebant duae ancillae?",0,0);
+        lat2wk1b.setValueAt("Quam ob causam Phrygia Aureliam vexabat?",1,0);
+        lat2wk1b.setValueAt("Quam ob Syra speculum non bene tenebat?",2,0);
+        lat2wk1b.setValueAt("Quocum Aurellia in urbem ire bult?",3,0);
+        lat2wk1b.setValueAt("Quos ad cenam Cornelius invitvit?",4,0);
+        lat2wk1b.setValueAt("Quid servus iam emit?",5,0);
+        lat2wk1b.setValueAt("Quid Aurelia emere vult?",6,0);
+        lat2wk1b.setValueAt("Quid Aurelia servos facere iubebit?",7,0);
+
+        lat2wk1b.setVisible(false);
+
+        l2w1t1 = new JLabel();
+        l2w1t1.setText("Section 1");
+        l2w1t1.setToolTipText("Vocab");
+        l2w1t1.setVisible(false);
+        hint = new JLabel("?");
+        hint.setVisible(false);
+        d2w1 = new JButton("Next");
+        d2w1.setToolTipText("No going back now");
+        d2w1.setVisible(false);
+        d2w1.setActionCommand("nextt1");
+        d2w1.addActionListener(this);
+        d2w1b = new JButton("Next");
+        d2w1b.setVisible(false);
+        d2w1b.setActionCommand("nextt2");
+        d2w1b.addActionListener(this);
 
 
 
+
+        add(l2w1t1);
+        add(lat2wk1);
+        add(lat2wk1b);
+        add(hint);
+        add(d2w1);
+        add(d2w1b);
     }
 
 
@@ -222,11 +293,29 @@ public class Level extends JPanel
             declen.setVisible(false);
             l1.setVisible(false);
             MOTV.setVisible(false);
+            lat2.setVisible(false);
             System.out.println("com.mypackage.Level to Weeks");
             src = e.getActionCommand();
         }
+        if (src == "lat2"){
+            MOTV.setVisible(false);
+            declen.setVisible(false);
+            l1.setVisible(false);
+            lat2.setVisible(false);
+
+            lat2week1.setVisible(true);
+        }
+        if(src == "lat2wk1"){
+            lat2week1.setVisible(false);
+            lat2wk1.setVisible(true);
+            hint.setToolTipText("Define the words, don't use Caps");
+            hint.setVisible(true);
+            d2w1.setVisible(true);
+            l2w1t1.setVisible(true);
+        }
         if(src == "back"){
             System.out.println(src);
+            Right = 0;
             w2.setVisible(false);
             back1.setVisible(false);
             mess.setVisible(false);
@@ -256,16 +345,61 @@ public class Level extends JPanel
             declen.setVisible(true);
             l1.setVisible(true);
             MOTV.setVisible(true);
+            lat2.setVisible(true);
 
 
             System.out.println("Back to com.mypackage.Level");
             src = e.getActionCommand();
+        }
+        if (src == "nextt1"){
+            lat2wk1.setVisible(false);
+            hint.setToolTipText("Respond in Latin, can be very picky, scoring not implemented");
+            d2w1.setVisible(false);
+            lat2wk1b.setVisible(true);
+            l2w1t1.setText("Section 2");
+            l2w1t1.setToolTipText("Responde Latine");
+            {
+                if (lat2wk1.getValueAt(0,1).equals("hair")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(1,1).equals("carelessly")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(2,1).equals("annoyed")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(3,1).equals("pig")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(4,1).equals("whose")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(5,1).equals("dormouse")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(6,1).equals("sedan chair")){
+                    Right++;
+                }
+                if (lat2wk1.getValueAt(7,1).equals("to sell")){
+                    Right++;
+                }
+            }
+            System.out.println(Right);
+            d2w1b.setVisible(true);
+        }
+        if (src == "nextt2"){
+            Results = Integer.toString(Right);
+            lat2wk1b.setVisible(false);
+            hint.setVisible(false);
+
+
         }
         if(src == "Declensions"){
             System.out.println(src);
             declen.setVisible(false);
             MOTV.setVisible(false);
             l1.setVisible(false);
+            lat2.setVisible(false);
 
             first.setVisible(true);
             second.setVisible(true);
