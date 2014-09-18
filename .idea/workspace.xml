@@ -31,7 +31,7 @@
       <file leaf-file-name="launch.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mypackage/launch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="918">
+            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1020">
               <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
               <folding />
             </state>
@@ -41,7 +41,7 @@
       <file leaf-file-name="messageOfTheVersion.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mypackage/messageOfTheVersion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
               <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
               <folding />
             </state>
@@ -51,11 +51,9 @@
       <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mypackage/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1120" max-vertical-offset="3315">
+            <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="3417">
               <caret line="238" column="38" selection-start-line="238" selection-start-column="38" selection-end-line="238" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#854#875#0" expanded="false" />
                 <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
                 <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
                 <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -119,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/com/mypackage/messageOfTheVersion.java" />
         <option value="$PROJECT_DIR$/src/com/mypackage/launch.java" />
         <option value="$PROJECT_DIR$/src/com/mypackage/Level.java" />
+        <option value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       </list>
     </option>
   </component>
@@ -154,6 +153,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Latin App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Latin App" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,48 +183,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="LatinReview" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latin App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latin App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latin App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latin App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latin App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Latin App" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.mypackage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -303,19 +274,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -341,6 +299,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -447,14 +418,14 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3380503" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23352435" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39937106" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -486,6 +457,59 @@
     <entry file="file://$PROJECT_DIR$/src/com/mypackage/launch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mypackage/messageOfTheVersion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
+          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mypackage/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="3417">
+          <caret line="238" column="38" selection-start-line="238" selection-start-column="38" selection-end-line="238" selection-end-column="38" />
+          <folding>
+            <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="1993:2347" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="2357:3227" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="3237:3376" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="3386:5704" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="5714:5794" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="8844:9247" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="9274:9470" placeholder="..." />
+            <marker date="1411004594675" expanded="true" signature="9499:9765" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="9791:11015" placeholder="..." />
+            <marker date="1411004594675" expanded="true" signature="11364:12266" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="12549:13000" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="13027:13941" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="13969:14879" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="14906:15815" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="15850:16725" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="16753:17662" placeholder="..." />
+            <marker date="1411004594675" expanded="false" signature="17688:37466" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="153">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mypackage/launch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
           <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding />
         </state>
@@ -504,8 +528,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="969" max-vertical-offset="1955">
           <caret line="225" column="65" selection-start-line="225" selection-start-column="65" selection-end-line="225" selection-end-column="65" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -534,7 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="20332" max-vertical-offset="163302">
           <caret line="1196" column="16" selection-start-line="1196" selection-start-column="16" selection-end-line="1196" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,8 +580,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="901" max-vertical-offset="1751">
           <caret line="227" column="48" selection-start-line="227" selection-start-column="48" selection-end-line="227" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -598,8 +617,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="4505" max-vertical-offset="15538">
           <caret line="394" column="23" selection-start-line="394" selection-start-column="23" selection-end-line="394" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -640,20 +657,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manifest.mf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
-          <caret line="4" column="0" selection-start-line="3" selection-start-column="32" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mypackage/Level.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="16422" max-vertical-offset="17034">
           <caret line="966" column="39" selection-start-line="966" selection-start-column="39" selection-end-line="966" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -686,20 +694,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manifest.mf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="170">
-          <caret line="4" column="0" selection-start-line="3" selection-start-column="32" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mypackage/Level.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="16422" max-vertical-offset="17034">
           <caret line="966" column="39" selection-start-line="966" selection-start-column="39" selection-end-line="966" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -732,20 +731,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manifest.mf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mypackage/Level.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="16422" max-vertical-offset="17034">
           <caret line="966" column="39" selection-start-line="966" selection-start-column="39" selection-end-line="966" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -783,8 +773,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="16388" max-vertical-offset="17000">
           <caret line="964" column="39" selection-start-line="964" selection-start-column="39" selection-end-line="964" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -822,8 +810,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="16237" max-vertical-offset="16966">
           <caret line="964" column="39" selection-start-line="964" selection-start-column="39" selection-end-line="964" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -862,8 +848,6 @@
           <caret line="337" column="30" selection-start-line="337" selection-start-column="30" selection-end-line="337" selection-end-column="30" />
           <caret line="336" column="30" selection-start-line="336" selection-start-column="30" selection-end-line="336" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -901,8 +885,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="2737">
           <caret line="118" column="42" selection-start-line="117" selection-start-column="4" selection-end-line="118" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
@@ -957,18 +939,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/manifest.mf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.103186645" vertical-offset="0" max-vertical-offset="659">
-          <caret line="4" column="0" selection-start-line="3" selection-start-column="32" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_20/src.zip!/javax/swing/JTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="18674" max-vertical-offset="158644">
           <caret line="1196" column="16" selection-start-line="1196" selection-start-column="16" selection-end-line="1196" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,8 +967,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1120" max-vertical-offset="3315">
           <caret line="238" column="38" selection-start-line="238" selection-start-column="38" selection-end-line="238" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#854#875#0" expanded="false" />
             <marker date="1411004594675" expanded="false" signature="1039:1794" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1952" placeholder="..." />
             <marker date="1411004594675" expanded="false" signature="1804:1984" placeholder="..." />
